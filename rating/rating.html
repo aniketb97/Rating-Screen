@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="hearts.css">
+	  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="hearts.js"></script>
+    <script type="text/javascript">
+      function myFunction(){
+        document.body.style.background = "url('congrats.gif')";
+        setTimeout("location.href = 'http://www.google.com';",1500);
+      }
+    </script>
+    <meta charset="utf-8">
+    <title>Rating Screen</title>
+  </head>
+
+  <body class="b">
+    <div class="container">
+    	<div class="row lead">
+    		<h2>Did you love the performance? <br> <small>Please rate!!</small> </h2>
+    	</div>
+        <div class="row lead">
+            <div id="stars" class="starrr" style="font-size:43px ; color: #ffd739" data-rating='5'></div>
+            <div >
+            <p style="font-size:25px"> &#128542; &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#128516; </p>
+            </div>
+    	</div>
+      <div class="buzzer">
+        <button style="border: 0px ; color: white; background-color: white" onclick=myFunction() > <img src="submit.jpg" alt="SUBMIT"> </button>
+        <!-- <form action="congrats.html" method="get">
+            <input type="image" name="submit" src="submit.jpg">
+        </form> -->
+      </div>
+    </div>
+  </body>
+</html>
